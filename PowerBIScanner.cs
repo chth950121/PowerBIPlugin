@@ -56,17 +56,22 @@ namespace PowerBIOptimizer
             using (var connection = new AdomdConnection($"Data Source={filePath}"))
             {
                 connection.Open();
-                var schema = connection.GetSchema("TABLES");
+                var cmd = connection.CreateCommand();
+                cmd.CommandText = "SELECT [TABLE_NAME] FROM $System.DISCOVER_CSDL_METADATA WHERE [TABLE_TYPE] = 'TABLE'";
                 
-                foreach (System.Data.DataRow row in schema.Rows)
+                using (var reader = cmd.ExecuteReader())
                 {
-                    var table = new Table
+                    while (reader.Read())
                     {
-                        Name = row["TABLE_NAME"].ToString() ?? "",
-                        Columns = GetTableColumns(connection, row["TABLE_NAME"].ToString() ?? ""),
-                        Source = DetermineTableSource(connection, row["TABLE_NAME"].ToString() ?? "")
-                    };
-                    tables.Add(table);
+                        var tableName = reader["TABLE_NAME"].ToString() ?? "";
+                        var table = new Table
+                        {
+                            Name = tableName,
+                            Columns = GetTableColumns(connection, tableName),
+                            Source = DetermineTableSource(connection, tableName)
+                        };
+                        tables.Add(table);
+                    }
                 }
             }
             return tables;
@@ -75,16 +80,23 @@ namespace PowerBIOptimizer
         private List<Column> GetTableColumns(AdomdConnection connection, string tableName)
         {
             var columns = new List<Column>();
-            var schema = connection.GetSchema("COLUMNS", new[] { tableName });
-            
-            foreach (System.Data.DataRow row in schema.Rows)
+            var cmd = connection.CreateCommand();
+            cmd.CommandText = $@"
+                SELECT COLUMN_NAME, DATA_TYPE 
+                FROM $System.DISCOVER_CSDL_METADATA 
+                WHERE TABLE_NAME = '{tableName}'";
+
+            using (var reader = cmd.ExecuteReader())
             {
-                columns.Add(new Column
+                while (reader.Read())
                 {
-                    Name = row["COLUMN_NAME"].ToString() ?? "",
-                    DataType = row["DATA_TYPE"].ToString() ?? "",
-                    IsUsed = CheckColumnUsage(connection, tableName, row["COLUMN_NAME"].ToString() ?? "")
-                });
+                    columns.Add(new Column
+                    {
+                        Name = reader["COLUMN_NAME"].ToString() ?? "",
+                        DataType = reader["DATA_TYPE"].ToString() ?? "",
+                        IsUsed = CheckColumnUsage(connection, tableName, reader["COLUMN_NAME"].ToString() ?? "")
+                    });
+                }
             }
             return columns;
         }
@@ -95,16 +107,20 @@ namespace PowerBIOptimizer
             using (var connection = new AdomdConnection($"Data Source={filePath}"))
             {
                 connection.Open();
-                var schema = connection.GetSchema("MEASURES");
+                var cmd = connection.CreateCommand();
+                cmd.CommandText = "SELECT [MEASURE_NAME], [MEASURE_EXPRESSION], [MEASURE_TABLE] FROM $System.DISCOVER_CSDL_METADATA WHERE [TABLE_TYPE] = 'MEASURE'";
                 
-                foreach (System.Data.DataRow row in schema.Rows)
+                using (var reader = cmd.ExecuteReader())
                 {
-                    measures.Add(new Measure
+                    while (reader.Read())
                     {
-                        Name = row["MEASURE_NAME"].ToString() ?? "",
-                        Expression = row["MEASURE_EXPRESSION"].ToString() ?? "",
-                        TableName = row["MEASURE_TABLE"].ToString() ?? ""
-                    });
+                        measures.Add(new Measure
+                        {
+                            Name = reader["MEASURE_NAME"].ToString() ?? "",
+                            Expression = reader["MEASURE_EXPRESSION"].ToString() ?? "",
+                            TableName = reader["MEASURE_TABLE"].ToString() ?? ""
+                        });
+                    }
                 }
             }
             return measures;

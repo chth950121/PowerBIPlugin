@@ -215,15 +215,15 @@ namespace PowerBIOptimizer
         {
             // Add error handling for common operations
             return $@"
-try
-    {mQuery}
-otherwise
-    error [
-        Reason = "Query failed to execute",
-        Message = Error[Message],
-        Detail = Error[Detail]
-    ]
-";
+            try
+                {mQuery}
+            otherwise
+                error [
+                    Reason = ""Query failed to execute"",
+                    Message = Error[Message],
+                    Detail = Error[Detail]
+                ]
+            ";
         }
     }
 }

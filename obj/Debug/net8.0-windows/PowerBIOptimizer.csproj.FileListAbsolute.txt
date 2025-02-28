@@ -3,3 +3,16 @@ B:\Works\Fernando\Coding\C#\Power BI Plugin\Test\PowerBIPlugin\obj\Debug\net8.0-
 B:\Works\Fernando\Coding\C#\Power BI Plugin\Test\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.AssemblyInfoInputs.cache
 B:\Works\Fernando\Coding\C#\Power BI Plugin\Test\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.AssemblyInfo.cs
 B:\Works\Fernando\Coding\C#\Power BI Plugin\Test\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.csproj.CoreCompileInputs.cache
+E:\github\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.csproj.AssemblyReference.cache
+E:\github\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.GeneratedMSBuildEditorConfig.editorconfig
+E:\github\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.AssemblyInfoInputs.cache
+E:\github\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.AssemblyInfo.cs
+E:\github\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.csproj.CoreCompileInputs.cache
+E:\github\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.sourcelink.json
+E:\github\PowerBIPlugin\bin\Debug\net8.0-windows\PowerBIOptimizer.deps.json
+E:\github\PowerBIPlugin\bin\Debug\net8.0-windows\PowerBIOptimizer.dll
+E:\github\PowerBIPlugin\bin\Debug\net8.0-windows\PowerBIOptimizer.pdb
+E:\github\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.dll
+E:\github\PowerBIPlugin\obj\Debug\net8.0-windows\refint\PowerBIOptimizer.dll
+E:\github\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.pdb
+E:\github\PowerBIPlugin\obj\Debug\net8.0-windows\ref\PowerBIOptimizer.dll

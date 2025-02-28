@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "B:\\Works\\Fernando\\Coding\\C#\\Power BI Plugin\\Test\\PowerBIPlugin\\PowerBIOptimizer.csproj": {}
+    "E:\\github\\PowerBIPlugin\\PowerBIOptimizer.csproj": {}
   },
   "projects": {
-    "B:\\Works\\Fernando\\Coding\\C#\\Power BI Plugin\\Test\\PowerBIPlugin\\PowerBIOptimizer.csproj": {
+    "E:\\github\\PowerBIPlugin\\PowerBIOptimizer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\Works\\Fernando\\Coding\\C#\\Power BI Plugin\\Test\\PowerBIPlugin\\PowerBIOptimizer.csproj",
+        "projectUniqueName": "E:\\github\\PowerBIPlugin\\PowerBIOptimizer.csproj",
         "projectName": "PowerBIOptimizer",
-        "projectPath": "B:\\Works\\Fernando\\Coding\\C#\\Power BI Plugin\\Test\\PowerBIPlugin\\PowerBIOptimizer.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "B:\\Works\\Fernando\\Coding\\C#\\Power BI Plugin\\Test\\PowerBIPlugin\\obj\\",
+        "projectPath": "E:\\github\\PowerBIPlugin\\PowerBIOptimizer.csproj",
+        "packagesPath": "C:\\Users\\DIKE\\.nuget\\packages\\",
+        "outputPath": "E:\\github\\PowerBIPlugin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DIKE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/corewcf/api/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
@@ -44,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -138,7 +139,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
