@@ -1,0 +1,5 @@
+B:\Works\Fernando\Coding\C#\Power BI Plugin\Test\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.csproj.AssemblyReference.cache
+B:\Works\Fernando\Coding\C#\Power BI Plugin\Test\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.GeneratedMSBuildEditorConfig.editorconfig
+B:\Works\Fernando\Coding\C#\Power BI Plugin\Test\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.AssemblyInfoInputs.cache
+B:\Works\Fernando\Coding\C#\Power BI Plugin\Test\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.AssemblyInfo.cs
+B:\Works\Fernando\Coding\C#\Power BI Plugin\Test\PowerBIPlugin\obj\Debug\net8.0-windows\PowerBIOptimizer.csproj.CoreCompileInputs.cache
