@@ -4,6 +4,6 @@ namespace PowerBIOptimizer.Models
     {
         public string Name { get; set; } = string.Empty;
         public string DataType { get; set; } = string.Empty;
-        public bool IsUsed { get; set; }
+        public bool IsUsed { get; set; } = false;  // Indicates if the column is used in any measures or queries
     }
 }

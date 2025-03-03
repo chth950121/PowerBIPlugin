@@ -51,73 +51,29 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
-            "CsvHelper": {
+            "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[33.0.1, )"
+              "version": "[8.0.0, )"
             },
-            "ExcelDataReader": {
+            "Microsoft.Extensions.Hosting": {
               "target": "Package",
-              "version": "[3.7.0, )"
+              "version": "[8.0.0, )"
             },
-            "Microsoft.AnalysisServices.AdomdClient.NetCore.retail.amd64": {
+            "NLog": {
               "target": "Package",
-              "version": "[19.84.1, )"
+              "version": "[1.7.0, )"
             },
-            "Microsoft.Identity.Client": {
+            "NLog.Config": {
               "target": "Package",
-              "version": "[4.68.0, )"
+              "version": "[1.7.0, )"
             },
-            "Microsoft.Identity.Client.NativeInterop": {
+            "NLog.Schema": {
               "target": "Package",
-              "version": "[0.18.0, )"
-            },
-            "Microsoft.IdentityModel.Abstractions": {
-              "target": "Package",
-              "version": "[8.6.0, )"
-            },
-            "Microsoft.PowerBI.Api": {
-              "target": "Package",
-              "version": "[4.22.0, )"
-            },
-            "Microsoft.Rest.ClientRuntime": {
-              "target": "Package",
-              "version": "[2.3.24, )"
+              "version": "[1.7.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.3, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "System.Diagnostics.DiagnosticSource": {
-              "target": "Package",
-              "version": "[9.0.2, )"
-            },
-            "System.Runtime.CompilerServices.Unsafe": {
-              "target": "Package",
-              "version": "[6.1.0, )"
-            },
-            "System.Security.Cryptography.Cng": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "runtime.native.System.Data.SqlClient.sni": {
-              "target": "Package",
-              "version": "[4.7.0, )"
-            },
-            "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": {
-              "target": "Package",
-              "version": "[4.4.0, )"
-            },
-            "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": {
-              "target": "Package",
-              "version": "[4.4.0, )"
-            },
-            "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": {
-              "target": "Package",
-              "version": "[4.4.0, )"
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PowerBIOptimizer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a668a7f5ece3d3eb38db90c4d3a462f2454e4591")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+122b3ff90580cb4138607707650b1fe64b03e9ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("PowerBIOptimizer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PowerBIOptimizer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

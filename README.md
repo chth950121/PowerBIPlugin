@@ -17,6 +17,44 @@ A C# plugin for optimizing Power BI files, including DAX measures, SQL queries, 
 - Power BI Desktop
 - Visual Studio 2022 or later
 
+## Structure of this project
+
+PowerBIOptimizer/
+│
+├── PowerBIOptimizer.sln                // Solution file
+│
+├── PowerBIOptimizer/                    // Main project folder
+│   ├── Properties/                      // Project properties
+│   ├── App.xaml                         // Application definition
+│   ├── App.xaml.cs                      // Application code-behind
+│   ├── MainWindow.xaml                  // Main window UI
+│   ├── MainWindow.xaml.cs               // Main window code-behind
+│   ├── Resources/                       // Resources folder
+│   │   ├── Styles/                      // XAML styles
+│   │   │   └── DefaultStyles.xaml       // Default styles
+│   │   └── Images/                      // Images for UI
+│   ├── UI/                              // UI components
+│   │   ├── Controls/                    // Custom controls
+│   │   │   ├── QueryListControl.xaml    // Control for displaying queries
+│   │   │   └── QueryListControl.xaml.cs // Control code-behind
+│   │   └── Windows/                     // Windows for dialogs
+│   │       ├── OptimizedQueryDialog.xaml // Dialog for optimized queries
+│   │       └── OptimizedQueryDialog.xaml.cs // Dialog code-behind
+│   ├── Services/                        // Services for business logic
+│   │   ├── PowerBIScanner.cs            // Service for detecting Power BI projects
+│   │   ├── Optimizer.cs                 // Service for optimizing queries
+│   │   └── QueryService.cs              // Service for handling queries and measures
+│   ├── Models/                          // Data models
+│   │   ├── Query.cs                     // Model for queries
+│   │   ├── Measure.cs                   // Model for measures
+│   │   ├── Column.cs                    // Model for columns
+│   │   ├── Table.cs                     // Model for tables
+│   │   └── DataSource.cs                // Model for data sources
+│   └── Resources/                       // Additional resources
+│       └── Config.json                  // Configuration file for settings
+│
+└── README.md                            // Project documentation
+
 ## Installation
 
 1. Build the solution
