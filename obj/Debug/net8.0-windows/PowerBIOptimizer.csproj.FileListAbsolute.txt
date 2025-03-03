@@ -1,7 +1,0 @@
-E:\github\PowerBIPlugin\PowerBIOptimizer\obj\Debug\net8.0-windows\PowerBIOptimizer.csproj.AssemblyReference.cache
-E:\github\PowerBIPlugin\PowerBIOptimizer\obj\Debug\net8.0-windows\Resources\Styles\DefaultStyles.baml
-E:\github\PowerBIPlugin\PowerBIOptimizer\obj\Debug\net8.0-windows\UI\Controls\QueryListControl.baml
-E:\github\PowerBIPlugin\PowerBIOptimizer\obj\Debug\net8.0-windows\UI\Controls\QueryListControl.g.cs
-E:\github\PowerBIPlugin\PowerBIOptimizer\obj\Debug\net8.0-windows\App.g.cs
-E:\github\PowerBIPlugin\PowerBIOptimizer\obj\Debug\net8.0-windows\PowerBIOptimizer_MarkupCompile.cache
-E:\github\PowerBIPlugin\PowerBIOptimizer\obj\Debug\net8.0-windows\PowerBIOptimizer_MarkupCompile.lref
