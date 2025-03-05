@@ -26,18 +26,29 @@ PowerBIPlugin/
 ├── src/                              # Source code folder
 │   ├── PowerBIPlugin.Core/           # Core functionality module
 │   │   ├── ProjectDetector.cs        # Class for detecting Power BI projects
+│   │   ├── QueryOptimizer.cs          # Class for optimizing queries
 │   │   ├── Models/                   # Data models (if needed)
-│   │   └── Services/                 # Business logic services (if needed)
+│   │   │   ├── PBIXFile.cs           # Model representing a PBIX file
+│   │   │   ├── Project.cs             # Model representing a Power BI project
+│   │   │   └── Query.cs               # Model representing a query
+│   │   │
+│   │   └── Services/                 # Business logic services
+│   │       ├── ProjectService.cs      # Service for managing projects
+│   │       ├── QueryService.cs        # Service for managing and optimizing queries
+│   │       └── FileService.cs         # Service for file operations
 │   │
 │   ├── PowerBIPlugin.UI/             # User Interface module
 │   │   ├── PowerBIPlugin.UI.csproj   # Project file for the UI
 │   │   ├── MainWindow.xaml           # XAML file for the main window (WPF)
 │   │   ├── MainWindow.xaml.cs        # Code-behind for the main window (WPF)
-│   │   └── App.xaml                  # Application definition (WPF)
+│   │   ├── QueryOptimizationView.xaml  # XAML for query optimization UI
+│   │   └── QueryOptimizationView.xaml.cs # Code-behind for query optimization UI
 │   │
 │   └── PowerBIPlugin.Tests/          # Unit tests module
 │       ├── PowerBIPlugin.Tests.csproj # Project file for tests
-│       └── ProjectDetectorTests.cs   # Unit tests for ProjectDetector
+│       ├── ProjectDetectorTests.cs    # Unit tests for ProjectDetector
+│       ├── QueryOptimizerTests.cs     # Unit tests for QueryOptimizer
+│       └── QueryServiceTests.cs       # Unit tests for QueryService
 │
 └── README.md                         # Documentation for the project
 
