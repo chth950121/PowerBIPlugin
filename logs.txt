@@ -1,7 +1,0 @@
-3/6/2025 4:34:24 PM: Checking workspace directory: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces
-3/6/2025 4:34:24 PM: Found Power BI Port: 54623
-3/6/2025 4:34:24 PM: Found Power BI Port: 58840
-3/6/2025 4:34:24 PM: Found Power BI Port: 63007
-3/6/2025 4:34:24 PM: Total Power BI Ports Found: 3
-3/6/2025 4:34:24 PM: Attempting to get currently open Power BI projects.
-3/6/2025 4:34:25 PM: Open PBIX files retrieved successfully.

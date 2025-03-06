@@ -11,7 +11,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AnalysisServices" Version="19.90.0" />
     <PackageReference Include="Microsoft.AnalysisServices.AdomdClient" Version="19.90.0" />
-    <PackageReference Include="Microsoft.AnalysisServices.AdomdClient.retail.amd64" Version="19.84.1" />
     <PackageReference Include="System.Management" Version="9.0.2" />
   </ItemGroup>
 

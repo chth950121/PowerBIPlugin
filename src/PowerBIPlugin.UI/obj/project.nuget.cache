@@ -1,13 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/k0tlJK6YZs=",
+  "dgSpecHash": "qQvqzLhspqE=",
   "success": true,
   "projectFilePath": "E:\\github\\PowerBIPlugin\\src\\PowerBIPlugin.UI\\PowerBIPlugin.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DIKE\\.nuget\\packages\\microsoft.analysisservices\\19.90.0\\microsoft.analysisservices.19.90.0.nupkg.sha512",
     "C:\\Users\\DIKE\\.nuget\\packages\\microsoft.analysisservices.adomdclient\\19.90.0\\microsoft.analysisservices.adomdclient.19.90.0.nupkg.sha512",
-    "C:\\Users\\DIKE\\.nuget\\packages\\microsoft.analysisservices.adomdclient.retail.amd64\\19.84.1\\microsoft.analysisservices.adomdclient.retail.amd64.19.84.1.nupkg.sha512",
-    "C:\\Users\\DIKE\\.nuget\\packages\\microsoft.analysisservices.tabular\\13.0.2150.3\\microsoft.analysisservices.tabular.13.0.2150.3.nupkg.sha512",
     "C:\\Users\\DIKE\\.nuget\\packages\\microsoft.identity.client\\4.65.0\\microsoft.identity.client.4.65.0.nupkg.sha512",
     "C:\\Users\\DIKE\\.nuget\\packages\\microsoft.identity.client.broker\\4.65.0\\microsoft.identity.client.broker.4.65.0.nupkg.sha512",
     "C:\\Users\\DIKE\\.nuget\\packages\\microsoft.identity.client.nativeinterop\\0.16.2\\microsoft.identity.client.nativeinterop.0.16.2.nupkg.sha512",

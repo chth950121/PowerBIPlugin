@@ -59,10 +59,6 @@
               "target": "Package",
               "version": "[19.90.0, )"
             },
-            "Microsoft.AnalysisServices.AdomdClient.retail.amd64": {
-              "target": "Package",
-              "version": "[19.84.1, )"
-            },
             "System.Management": {
               "target": "Package",
               "version": "[9.0.2, )"

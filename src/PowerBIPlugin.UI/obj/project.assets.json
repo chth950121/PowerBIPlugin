@@ -595,179 +595,6 @@
           }
         }
       },
-      "Microsoft.AnalysisServices.AdomdClient.retail.amd64/19.84.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "4.56.0"
-        },
-        "compile": {
-          "lib/net45/Microsoft.AnalysisServices.AdomdClient.dll": {
-            "related": ".xml"
-          },
-          "lib/net45/Microsoft.AnalysisServices.SPClient.Interfaces.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AnalysisServices.AdomdClient.dll": {
-            "related": ".xml"
-          },
-          "lib/net45/Microsoft.AnalysisServices.SPClient.Interfaces.dll": {
-            "related": ".xml"
-          }
-        },
-        "resource": {
-          "lib/net45/ar/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ar"
-          },
-          "lib/net45/bg/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "bg"
-          },
-          "lib/net45/ca/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ca"
-          },
-          "lib/net45/cs/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net45/da/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "da"
-          },
-          "lib/net45/de/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net45/el/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "el"
-          },
-          "lib/net45/es/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net45/et/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "et"
-          },
-          "lib/net45/eu/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "eu"
-          },
-          "lib/net45/fi/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "fi"
-          },
-          "lib/net45/fr/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net45/gl/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "gl"
-          },
-          "lib/net45/he/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "he"
-          },
-          "lib/net45/hi/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "hi"
-          },
-          "lib/net45/hr/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "hr"
-          },
-          "lib/net45/hu/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "hu"
-          },
-          "lib/net45/id/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "id"
-          },
-          "lib/net45/it/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net45/ja/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net45/kk/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "kk"
-          },
-          "lib/net45/ko/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net45/lt/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "lt"
-          },
-          "lib/net45/lv/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "lv"
-          },
-          "lib/net45/ms/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ms"
-          },
-          "lib/net45/nl/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "nl"
-          },
-          "lib/net45/no/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "no"
-          },
-          "lib/net45/pl/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net45/pt-PT/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "pt-PT"
-          },
-          "lib/net45/pt/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "pt"
-          },
-          "lib/net45/ro/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ro"
-          },
-          "lib/net45/ru/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net45/sk/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "sk"
-          },
-          "lib/net45/sl/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "sl"
-          },
-          "lib/net45/sr-Cyrl/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "sr-Cyrl"
-          },
-          "lib/net45/sr-Latn/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "sr-Latn"
-          },
-          "lib/net45/sv/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "sv"
-          },
-          "lib/net45/th/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "th"
-          },
-          "lib/net45/tr/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net45/uk/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "uk"
-          },
-          "lib/net45/vi/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "vi"
-          },
-          "lib/net45/zh-Hans/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net45/zh-Hant/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        },
-        "build": {
-          "build/net45/Microsoft.AnalysisServices.AdomdClient.retail.amd64.targets": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win-x64/native/msasxpress.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          }
-        }
-      },
-      "Microsoft.AnalysisServices.Tabular/13.0.2150.3": {
-        "type": "package",
-        "compile": {
-          "lib/Microsoft.AnalysisServices.Core.DLL": {},
-          "lib/Microsoft.AnalysisServices.Tabular.DLL": {}
-        },
-        "runtime": {
-          "lib/Microsoft.AnalysisServices.Core.DLL": {},
-          "lib/Microsoft.AnalysisServices.Tabular.DLL": {}
-        }
-      },
       "Microsoft.Identity.Client/4.65.0": {
         "type": "package",
         "dependencies": {
@@ -982,7 +809,6 @@
         "dependencies": {
           "Microsoft.AnalysisServices": "19.90.0",
           "Microsoft.AnalysisServices.AdomdClient": "19.90.0",
-          "Microsoft.AnalysisServices.AdomdClient.retail.amd64": "19.84.1",
           "System.Management": "9.0.2"
         },
         "compile": {
@@ -1581,173 +1407,6 @@
           "build/net472/Microsoft.AnalysisServices.AdomdClient.targets": {}
         }
       },
-      "Microsoft.AnalysisServices.AdomdClient.retail.amd64/19.84.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "4.56.0"
-        },
-        "compile": {
-          "lib/net45/Microsoft.AnalysisServices.AdomdClient.dll": {
-            "related": ".xml"
-          },
-          "lib/net45/Microsoft.AnalysisServices.SPClient.Interfaces.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AnalysisServices.AdomdClient.dll": {
-            "related": ".xml"
-          },
-          "lib/net45/Microsoft.AnalysisServices.SPClient.Interfaces.dll": {
-            "related": ".xml"
-          }
-        },
-        "resource": {
-          "lib/net45/ar/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ar"
-          },
-          "lib/net45/bg/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "bg"
-          },
-          "lib/net45/ca/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ca"
-          },
-          "lib/net45/cs/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net45/da/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "da"
-          },
-          "lib/net45/de/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net45/el/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "el"
-          },
-          "lib/net45/es/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net45/et/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "et"
-          },
-          "lib/net45/eu/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "eu"
-          },
-          "lib/net45/fi/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "fi"
-          },
-          "lib/net45/fr/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net45/gl/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "gl"
-          },
-          "lib/net45/he/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "he"
-          },
-          "lib/net45/hi/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "hi"
-          },
-          "lib/net45/hr/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "hr"
-          },
-          "lib/net45/hu/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "hu"
-          },
-          "lib/net45/id/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "id"
-          },
-          "lib/net45/it/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net45/ja/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net45/kk/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "kk"
-          },
-          "lib/net45/ko/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net45/lt/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "lt"
-          },
-          "lib/net45/lv/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "lv"
-          },
-          "lib/net45/ms/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ms"
-          },
-          "lib/net45/nl/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "nl"
-          },
-          "lib/net45/no/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "no"
-          },
-          "lib/net45/pl/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net45/pt-PT/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "pt-PT"
-          },
-          "lib/net45/pt/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "pt"
-          },
-          "lib/net45/ro/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ro"
-          },
-          "lib/net45/ru/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net45/sk/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "sk"
-          },
-          "lib/net45/sl/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "sl"
-          },
-          "lib/net45/sr-Cyrl/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "sr-Cyrl"
-          },
-          "lib/net45/sr-Latn/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "sr-Latn"
-          },
-          "lib/net45/sv/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "sv"
-          },
-          "lib/net45/th/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "th"
-          },
-          "lib/net45/tr/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net45/uk/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "uk"
-          },
-          "lib/net45/vi/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "vi"
-          },
-          "lib/net45/zh-Hans/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net45/zh-Hant/Microsoft.AnalysisServices.AdomdClient.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        },
-        "build": {
-          "build/net45/Microsoft.AnalysisServices.AdomdClient.retail.amd64.targets": {}
-        }
-      },
-      "Microsoft.AnalysisServices.Tabular/13.0.2150.3": {
-        "type": "package",
-        "compile": {
-          "lib/Microsoft.AnalysisServices.Core.DLL": {},
-          "lib/Microsoft.AnalysisServices.Tabular.DLL": {}
-        },
-        "runtime": {
-          "lib/Microsoft.AnalysisServices.Core.DLL": {},
-          "lib/Microsoft.AnalysisServices.Tabular.DLL": {}
-        }
-      },
       "Microsoft.Identity.Client/4.65.0": {
         "type": "package",
         "dependencies": {
@@ -1951,7 +1610,6 @@
         "dependencies": {
           "Microsoft.AnalysisServices": "19.90.0",
           "Microsoft.AnalysisServices.AdomdClient": "19.90.0",
-          "Microsoft.AnalysisServices.AdomdClient.retail.amd64": "19.84.1",
           "System.Management": "9.0.2"
         },
         "compile": {
@@ -2744,80 +2402,6 @@
         "runtimes/win-x64/native/msasxpress.dll"
       ]
     },
-    "Microsoft.AnalysisServices.AdomdClient.retail.amd64/19.84.1": {
-      "sha512": "Y5L6XjS/h2jBCEWVTE+mD9vmFWC6KndpdllHmALlDDqCOCjVE4XtPAz7Vv+UTjvHeKAcy9X27D0+8Z+p/img9Q==",
-      "type": "package",
-      "path": "microsoft.analysisservices.adomdclient.retail.amd64/19.84.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net45/Microsoft.AnalysisServices.AdomdClient.retail.amd64.targets",
-        "lib/net45/Microsoft.AnalysisServices.AdomdClient.dll",
-        "lib/net45/Microsoft.AnalysisServices.AdomdClient.xml",
-        "lib/net45/Microsoft.AnalysisServices.SPClient.Interfaces.dll",
-        "lib/net45/Microsoft.AnalysisServices.SPClient.Interfaces.xml",
-        "lib/net45/ar/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/bg/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/ca/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/cs/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/da/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/de/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/el/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/es/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/et/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/eu/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/fi/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/fr/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/gl/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/he/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/hi/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/hr/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/hu/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/id/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/it/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/ja/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/kk/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/ko/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/lt/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/lv/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/ms/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/nl/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/no/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/pl/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/pt-PT/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/pt/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/ro/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/ru/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/sk/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/sl/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/sr-Cyrl/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/sr-Latn/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/sv/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/th/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/tr/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/uk/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/vi/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/zh-Hans/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "lib/net45/zh-Hant/Microsoft.AnalysisServices.AdomdClient.resources.dll",
-        "microsoft.analysisservices.adomdclient.retail.amd64.19.84.1.nupkg.sha512",
-        "microsoft.analysisservices.adomdclient.retail.amd64.nuspec",
-        "runtimes/win-x64/native/msasxpress.dll"
-      ]
-    },
-    "Microsoft.AnalysisServices.Tabular/13.0.2150.3": {
-      "sha512": "nwqCaPGJyc/l3KmJnApiQxkxfAOko2kuF0lmfNpPdWpbQ/MZHJeqibGMdr6quot6/e5AsLbgukWxtbkBxBQ7LA==",
-      "type": "package",
-      "path": "microsoft.analysisservices.tabular/13.0.2150.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/Microsoft.AnalysisServices.Core.DLL",
-        "lib/Microsoft.AnalysisServices.Tabular.DLL",
-        "lib/Microsoft.AnalysisServices.Tabular.Json.DLL",
-        "microsoft.analysisservices.tabular.13.0.2150.3.nupkg.sha512",
-        "microsoft.analysisservices.tabular.nuspec"
-      ]
-    },
     "Microsoft.Identity.Client/4.65.0": {
       "sha512": "RV35ZcJ5/P7n+Zu6J3wmtiDdK6MW5h6EpZ0ojjB9sMwNhGHEJCv829cb3kZ4PZ664llYFv8sbUITWWGvBTqv0Q==",
       "type": "package",
@@ -3115,8 +2699,6 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
       "Microsoft.AnalysisServices.AdomdClient >= 19.90.0",
-      "Microsoft.AnalysisServices.AdomdClient.retail.amd64 >= 19.84.1",
-      "Microsoft.AnalysisServices.Tabular >= 13.0.2150.3",
       "PowerBIPlugin.Core >= 1.0.0"
     ]
   },
@@ -3178,14 +2760,6 @@
           "Microsoft.AnalysisServices.AdomdClient": {
             "target": "Package",
             "version": "[19.90.0, )"
-          },
-          "Microsoft.AnalysisServices.AdomdClient.retail.amd64": {
-            "target": "Package",
-            "version": "[19.84.1, )"
-          },
-          "Microsoft.AnalysisServices.Tabular": {
-            "target": "Package",
-            "version": "[13.0.2150.3, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"

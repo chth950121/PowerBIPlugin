@@ -6,8 +6,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AnalysisServices.AdomdClient" Version="19.90.0" />
-    <PackageReference Include="Microsoft.AnalysisServices.AdomdClient.retail.amd64" Version="19.84.1" />
-    <PackageReference Include="Microsoft.AnalysisServices.Tabular" Version="13.0.2150.3" />
   </ItemGroup>
 
   <PropertyGroup>
