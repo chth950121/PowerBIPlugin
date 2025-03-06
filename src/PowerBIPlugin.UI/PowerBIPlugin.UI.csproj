@@ -13,7 +13,11 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
+<<<<<<< HEAD
     <LangVersion>10.0</LangVersion> <!-- This is the key change -->
+=======
+    <LangVersion>10.0</LangVersion>
+>>>>>>> d536eee6ccee2f7a409fa6954e971757314dcf77
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>

@@ -130,10 +130,13 @@
             "Microsoft.AnalysisServices.AdomdClient.retail.amd64": {
               "target": "Package",
               "version": "[19.84.1, )"
+<<<<<<< HEAD
             },
             "Microsoft.AnalysisServices.Tabular": {
               "target": "Package",
               "version": "[13.0.2150.3, )"
+=======
+>>>>>>> d536eee6ccee2f7a409fa6954e971757314dcf77
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"

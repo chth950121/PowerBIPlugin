@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "/k0tlJK6YZs=",
+=======
+  "dgSpecHash": "ZX7QjON1tes=",
+>>>>>>> d536eee6ccee2f7a409fa6954e971757314dcf77
   "success": true,
   "projectFilePath": "E:\\github\\PowerBIPlugin\\src\\PowerBIPlugin.UI\\PowerBIPlugin.UI.csproj",
   "expectedPackageFiles": [

@@ -2,7 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
+<<<<<<< HEAD
     <LangVersion>10.0</LangVersion> <!-- This is the key change -->
+=======
+    <LangVersion>10.0</LangVersion>
+>>>>>>> d536eee6ccee2f7a409fa6954e971757314dcf77
     <DefineConstants>WINDOWS</DefineConstants> <!-- Add this line -->
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>

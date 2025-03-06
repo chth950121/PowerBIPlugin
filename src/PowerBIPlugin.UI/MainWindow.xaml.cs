@@ -7,11 +7,21 @@ using System.Windows.Controls;
 
 namespace PowerBIPlugin.UI
 {
+<<<<<<< HEAD
     public partial class MainWindow : Window
+=======
+    private List<string> queries = new List<string>();
+
+    public MainWindow()
+>>>>>>> d536eee6ccee2f7a409fa6954e971757314dcf77
     {
         private readonly PowerBIService powerBIService;
 
+<<<<<<< HEAD
         public MainWindow()
+=======
+        if (!IsRunAsAdmin())
+>>>>>>> d536eee6ccee2f7a409fa6954e971757314dcf77
         {
             InitializeComponent();
             var fileSystemService = new FileSystemService();
@@ -39,6 +49,7 @@ namespace PowerBIPlugin.UI
             }
         }
 
+<<<<<<< HEAD
         private void btnGetOpenProject_Click(object sender, RoutedEventArgs e)
         {
             lbOpenProjects.Items.Clear();
@@ -87,6 +98,28 @@ namespace PowerBIPlugin.UI
             WindowsIdentity id = WindowsIdentity.GetCurrent();
             WindowsPrincipal principal = new WindowsPrincipal(id);
             return principal.IsInRole(WindowsBuiltInRole.Administrator);
+=======
+    private void lbOpenProjects_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (lbOpenProjects.SelectedItem is null) return;
+
+        lbQueries.Items.Clear();
+
+        string selectedProject = lbOpenProjects.SelectedItem.ToString();
+        string port = selectedProject.Split(new string[] { " : " }, StringSplitOptions.None)[0].Trim();
+
+        try
+        {
+            List<string> queries = QueryOptimizer.GetQueries(port);
+
+            foreach (var query in queries) lbQueries.Items.Add(query);
+            foreach (var query in queries) Logger.Log(query);
+        }
+        catch (Exception ex)
+        {
+            Logger.Log($"Error: {ex.Message}");
+            MessageBox.Show($"Error: {ex.Message}");
+>>>>>>> d536eee6ccee2f7a409fa6954e971757314dcf77
         }
     }
 }
