@@ -1,0 +1,13 @@
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\bin\Debug\net8.0-windows7.0\PowerBIPlugin.Core.deps.json
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\bin\Debug\net8.0-windows7.0\PowerBIPlugin.Core.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\bin\Debug\net8.0-windows7.0\PowerBIPlugin.Core.pdb
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\obj\Debug\net8.0-windows7.0\PowerBIPlugin.Core.csproj.AssemblyReference.cache
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\obj\Debug\net8.0-windows7.0\PowerBIPlugin.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\obj\Debug\net8.0-windows7.0\PowerBIPlugin.Core.AssemblyInfoInputs.cache
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\obj\Debug\net8.0-windows7.0\PowerBIPlugin.Core.AssemblyInfo.cs
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\obj\Debug\net8.0-windows7.0\PowerBIPlugin.Core.csproj.CoreCompileInputs.cache
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\obj\Debug\net8.0-windows7.0\PowerBIPlugin.Core.sourcelink.json
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\obj\Debug\net8.0-windows7.0\PowerBIPlugin.Core.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\obj\Debug\net8.0-windows7.0\refint\PowerBIPlugin.Core.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\obj\Debug\net8.0-windows7.0\PowerBIPlugin.Core.pdb
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\obj\Debug\net8.0-windows7.0\ref\PowerBIPlugin.Core.dll
