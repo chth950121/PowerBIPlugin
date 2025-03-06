@@ -20,15 +20,11 @@ namespace PowerBIPlugin.UI;
 /// </summary>
 public partial class MainWindow : Window
 {
-    private QueryOptimizer queryOptimizer;
     private List<string> queries = new List<string>();
 
     public MainWindow()
     {
         InitializeComponent(); // Initialize the UI components first
-
-        // Initialize projectDetector before checking for admin privileges
-        queryOptimizer = new QueryOptimizer();
 
         if (!IsRunAsAdmin())
         {
@@ -68,11 +64,24 @@ public partial class MainWindow : Window
 
     private void lbOpenProjects_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        if (lbOpenProjects.SelectedItem != null)
+        if (lbOpenProjects.SelectedItem is null) return;
+
+        lbQueries.Items.Clear();
+
+        string selectedProject = lbOpenProjects.SelectedItem.ToString();
+        string port = selectedProject.Split(new string[] { " : " }, StringSplitOptions.None)[0].Trim();
+
+        try
         {
-            string selectedProject = lbOpenProjects.SelectedItem.ToString();
-            // Perform actions with the selected project
-            MessageBox.Show($"Selected Open Project: {selectedProject}");
+            List<string> queries = QueryOptimizer.GetQueries(port);
+
+            foreach (var query in queries) lbQueries.Items.Add(query);
+            foreach (var query in queries) Logger.Log(query);
+        }
+        catch (Exception ex)
+        {
+            Logger.Log($"Error: {ex.Message}");
+            MessageBox.Show($"Error: {ex.Message}");
         }
     }
 

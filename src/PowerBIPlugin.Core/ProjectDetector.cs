@@ -38,7 +38,7 @@ namespace PowerBIPlugin
 
                     if (File.Exists(portFilePath))
                     {
-                        string port = File.ReadAllText(portFilePath).Trim();
+                        string port = File.ReadAllText(portFilePath).Trim().Replace("\0", "");
                         Logger.Log($"Found Power BI Port: {port}");
                         ports.Add(port);
                     }
