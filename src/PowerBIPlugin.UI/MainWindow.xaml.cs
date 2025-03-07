@@ -5,6 +5,7 @@ using System.Security.Principal;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;  // FIX: Added missing namespace for Brushes
+using System.Text.Json;
 
 namespace PowerBIPlugin.UI
 {
@@ -62,20 +63,93 @@ namespace PowerBIPlugin.UI
             if (lbQueries.SelectedItem != null)
             {
                 string selectedQuery = lbQueries.SelectedItem.ToString();
-                string optimizedQuery = await OpenAIService.GetResponseFromOpenAI($"Optimize this Power BI M Query: {selectedQuery}");
+                
+                // Ensure selectedQuery is not null or empty
+                if (string.IsNullOrEmpty(selectedQuery))
+                {
+                    MessageBox.Show("Selected query is empty or null.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
 
-                lbGeneratedQueries.Items.Add(optimizedQuery);
+                string response = await OpenAIService.GetResponseFromOpenAI($"Optimize this Power BI M Query: {selectedQuery}");
+
+                // Check if response contains an error
+                if (response.Contains("\"error\""))
+                {
+                    try
+                    {
+                        using JsonDocument doc = JsonDocument.Parse(response);
+                        JsonElement root = doc.RootElement;
+
+                        if (root.TryGetProperty("error", out JsonElement errorElement) &&
+                            errorElement.TryGetProperty("message", out JsonElement messageElement))
+                        {
+                            string errorMessage = messageElement.GetString();
+                            MessageBox.Show($"Error: {errorMessage}", "OpenAI API Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                            return; // Exit function to prevent adding error to listbox
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"An error occurred while processing the API response: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+                }
+
+                // If no error, add optimized query to the list
+                lbGeneratedQueries.Items.Add(response);
             }
             else
             {
-                MessageBox.Show("Please select a query to optimize.");
+                MessageBox.Show("Please select a query to optimize.", "Selection Required", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
-
-        private void btnGenerateOptimizedMeasure_Click(object sender, RoutedEventArgs e)
+        private async void btnGenerateOptimizedMeasure_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Generate Optimized Measure button clicked!");
+            if (lbMeasures.SelectedItem != null)
+            {
+                string selectedMeasure = lbMeasures.SelectedItem.ToString();
+
+                // Ensure selectedMeasure is not null or empty
+                if (string.IsNullOrEmpty(selectedMeasure))
+                {
+                    MessageBox.Show("Selected measure is empty or null.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                string response = await OpenAIService.GetResponseFromOpenAI($"Optimize this Power BI Measure: {selectedMeasure}");
+
+                // Check if response contains an error
+                if (response.Contains("\"error\""))
+                {
+                    try
+                    {
+                        using JsonDocument doc = JsonDocument.Parse(response);
+                        JsonElement root = doc.RootElement;
+
+                        if (root.TryGetProperty("error", out JsonElement errorElement) &&
+                            errorElement.TryGetProperty("message", out JsonElement messageElement))
+                        {
+                            string errorMessage = messageElement.GetString();
+                            MessageBox.Show($"Error: {errorMessage}", "OpenAI API Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                            return; // Exit function to prevent adding error to listbox
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"An error occurred while processing the API response: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+                }
+
+                // If no error, add optimized measure to the list
+                lbGeneratedQueries.Items.Add(response);
+            }
+            else
+            {
+                MessageBox.Show("Please select a measure to optimize.", "Selection Required", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
 
         private void lbOpenProjects_SelectionChanged(object sender, SelectionChangedEventArgs e)
