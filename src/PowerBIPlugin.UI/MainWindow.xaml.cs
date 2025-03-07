@@ -84,7 +84,7 @@ namespace PowerBIPlugin.UI
                         if (root.TryGetProperty("error", out JsonElement errorElement) &&
                             errorElement.TryGetProperty("message", out JsonElement messageElement))
                         {
-                            string errorMessage = messageElement.GetString();
+                            string errorMessage = messageElement.ToString();
                             MessageBox.Show($"Error: {errorMessage}", "OpenAI API Error", MessageBoxButton.OK, MessageBoxImage.Error);
                             return; // Exit function to prevent adding error to listbox
                         }
@@ -131,7 +131,7 @@ namespace PowerBIPlugin.UI
                         if (root.TryGetProperty("error", out JsonElement errorElement) &&
                             errorElement.TryGetProperty("message", out JsonElement messageElement))
                         {
-                            string errorMessage = messageElement.GetString();
+                            string errorMessage = messageElement.ToString();
                             MessageBox.Show($"Error: {errorMessage}", "OpenAI API Error", MessageBoxButton.OK, MessageBoxImage.Error);
                             return; // Exit function to prevent adding error to listbox
                         }
