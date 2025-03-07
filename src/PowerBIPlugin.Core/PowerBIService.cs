@@ -141,7 +141,6 @@ namespace PowerBIPlugin
             try
             {
                 string output = _processService.ExecuteCommand(handlePath);
-                Logger.Log($"Raw Handle Output: {output}");
 
                 if (string.IsNullOrWhiteSpace(output))
                 {
