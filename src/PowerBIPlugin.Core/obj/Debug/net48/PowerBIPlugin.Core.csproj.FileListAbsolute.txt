@@ -208,3 +208,7 @@ E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\bin\Debug\net48\OpenAI.Net.dll
 E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\bin\Debug\net48\System.Interactive.Async.dll
 E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\bin\Debug\net48\System.Linq.Async.dll
 E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\bin\Debug\net48\System.Threading.Tasks.Extensions.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\bin\Debug\net48\System.IO.Pipelines.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\bin\Debug\net48\System.Text.Encodings.Web.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\bin\Debug\net48\System.Text.Json.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.Core\bin\Debug\net48\System.ValueTuple.dll

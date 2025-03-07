@@ -57,10 +57,21 @@ namespace PowerBIPlugin.UI
             }
         }
 
-        private void btnGenerateOptimizedQuery_Click(object sender, RoutedEventArgs e)
+        private async void btnGenerateOptimizedQuery_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Generate Optimized Query button clicked!");
+            List<string> queries = new List<string>();
+            foreach (var item in lbQueries.Items)
+            {
+                queries.Add(item.ToString());
+            }
+
+            // Ensure that you're calling the method correctly
+            string optimizedQuery = await OpenAIService.GetResponseFromOpenAI("Optimize this Power BI M Query:", queries);
+
+            // You can now use optimizedQuery, such as displaying it or storing it
+            MessageBox.Show(optimizedQuery, "Optimized Query");
         }
+
 
         private void btnGenerateOptimizedMeasure_Click(object sender, RoutedEventArgs e)
         {
