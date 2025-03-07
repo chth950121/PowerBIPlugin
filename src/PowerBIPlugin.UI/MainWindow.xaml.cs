@@ -59,17 +59,17 @@ namespace PowerBIPlugin.UI
 
         private async void btnGenerateOptimizedQuery_Click(object sender, RoutedEventArgs e)
         {
-            List<string> queries = new List<string>();
-            foreach (var item in lbQueries.Items)
+            if (lbQueries.SelectedItem != null)
             {
-                queries.Add(item.ToString());
+                string selectedQuery = lbQueries.SelectedItem.ToString();
+                string optimizedQuery = await OpenAIService.GetResponseFromOpenAI($"Optimize this Power BI M Query: {selectedQuery}");
+
+                lbGeneratedQueries.Items.Add(optimizedQuery);
             }
-
-            // Ensure that you're calling the method correctly
-            string optimizedQuery = await OpenAIService.GetResponseFromOpenAI("Optimize this Power BI M Query:", queries);
-
-            // You can now use optimizedQuery, such as displaying it or storing it
-            MessageBox.Show(optimizedQuery, "Optimized Query");
+            else
+            {
+                MessageBox.Show("Please select a query to optimize.");
+            }
         }
 
 

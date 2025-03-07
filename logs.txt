@@ -1,80 +1,57 @@
-3/7/2025 9:18:44 AM: Checking workspace directory: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces
-3/7/2025 9:18:44 AM: Found Power BI Port: 54623
-3/7/2025 9:18:44 AM: Found Power BI Port: 58840
-3/7/2025 9:18:44 AM: Found Power BI Port: 63007
-3/7/2025 9:18:44 AM: Total Power BI Ports Found: 3
-3/7/2025 9:18:44 AM: Attempting to get currently open Power BI projects.
-3/7/2025 9:18:46 AM: Found open PBIX file: C:\Users\DIKE\Documents\sample.pbix
-3/7/2025 9:18:46 AM: Found open PBIX file: C:\Users\DIKE\Documents\Sample1.pbix
-3/7/2025 9:18:46 AM: Found open PBIX file: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Sample156bb727a-cd41-4d3a-a4c8-269a092a0046.pbix
-3/7/2025 9:18:46 AM: Open PBIX files retrieved successfully.
-3/7/2025 9:18:46 AM: Matched PBIX: C:\Users\DIKE\Documents\Sample1.pbix with Port: 54623
-3/7/2025 9:18:46 AM: Matched PBIX: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Sample156bb727a-cd41-4d3a-a4c8-269a092a0046.pbix with Port: 58840
-3/7/2025 9:18:46 AM: Matched PBIX: C:\Users\DIKE\Documents\sample.pbix with Port: 63007
-3/7/2025 9:18:48 AM: Partition: financials, Query: let
+3/7/2025 11:31:24 AM: Checking workspace directory: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces
+3/7/2025 11:31:24 AM: Found Power BI Port: 54623
+3/7/2025 11:31:24 AM: Found Power BI Port: 58840
+3/7/2025 11:31:24 AM: Found Power BI Port: 63007
+3/7/2025 11:31:24 AM: Total Power BI Ports Found: 3
+3/7/2025 11:31:24 AM: Attempting to get currently open Power BI projects.
+3/7/2025 11:31:26 AM: Found open PBIX file: C:\Users\DIKE\Documents\sample.pbix
+3/7/2025 11:31:26 AM: Found open PBIX file: C:\Users\DIKE\Documents\Sample1.pbix
+3/7/2025 11:31:26 AM: Found open PBIX file: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Sample156bb727a-cd41-4d3a-a4c8-269a092a0046.pbix
+3/7/2025 11:31:26 AM: Open PBIX files retrieved successfully.
+3/7/2025 11:31:26 AM: Matched PBIX: C:\Users\DIKE\Documents\Sample1.pbix with Port: 54623
+3/7/2025 11:31:26 AM: Matched PBIX: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Sample156bb727a-cd41-4d3a-a4c8-269a092a0046.pbix with Port: 58840
+3/7/2025 11:31:26 AM: Matched PBIX: C:\Users\DIKE\Documents\sample.pbix with Port: 63007
+3/7/2025 11:31:31 AM: Partition: financials, Query: let
  Source = Excel.Workbook(File.Contents("C:\Program Files\Microsoft Power BI Desktop\bin\SampleData\Financial Sample.xlsx"), null, true),
     financials_Table = Source{[Item="financials",Kind="Table"]}[Data],
     #"Changed Type" = Table.TransformColumnTypes(financials_Table,{{"Segment", type text}, {"Country", type text}, {"Product", type text}, {"Discount Band", type text}, {"Units Sold", type number}, {"Manufacturing Price", Int64.Type}, {"Sale Price", Int64.Type}, {"Gross Sales", type number}, {"Discounts", type number}, {" Sales", type number}, {"COGS", type number}, {"Profit", type number}, {"Date", type date}, {"Month Number", Int64.Type}, {"Month Name", type text}, {"Year", Int64.Type}})
 in
  #"Changed Type"
-3/7/2025 9:18:48 AM: Partition: DateTableTemplate_bc9e8e30-f55d-4607-895e-6f70cd1ce2a9, Query: Calendar(Date(2015,1,1), Date(2015,1,1))
-3/7/2025 9:18:48 AM: Partition: LocalDateTable_07d59351-6ea5-42cc-8945-1d9a7443038f, Query: Calendar(Date(Year(MIN('financials'[Date])), 1, 1), Date(Year(MAX('financials'[Date])), 12, 31))
-3/7/2025 9:18:55 AM: Asked OpenAI: 
-Optimize this Power BI M Query:
-financials : let
+3/7/2025 11:31:31 AM: Partition: DateTableTemplate_bc9e8e30-f55d-4607-895e-6f70cd1ce2a9, Query: Calendar(Date(2015,1,1), Date(2015,1,1))
+3/7/2025 11:31:31 AM: Partition: LocalDateTable_07d59351-6ea5-42cc-8945-1d9a7443038f, Query: Calendar(Date(Year(MIN('financials'[Date])), 1, 1), Date(Year(MAX('financials'[Date])), 12, 31))
+3/7/2025 11:31:40 AM: OPENAI_API_KEY: 
+3/7/2025 11:31:40 AM: requestData : "n { model = gpt-4, messages = <>f__AnonymousType1`2[System.String,System.String][], max_tokens = 100 }
+3/7/2025 11:31:45 AM: encodedData : {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
+3/7/2025 11:41:47 AM: Checking workspace directory: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces
+3/7/2025 11:41:47 AM: Found Power BI Port: 54623
+3/7/2025 11:41:47 AM: Found Power BI Port: 58840
+3/7/2025 11:41:47 AM: Found Power BI Port: 63007
+3/7/2025 11:41:47 AM: Total Power BI Ports Found: 3
+3/7/2025 11:41:47 AM: Attempting to get currently open Power BI projects.
+3/7/2025 11:41:49 AM: Found open PBIX file: C:\Users\DIKE\Documents\sample.pbix
+3/7/2025 11:41:49 AM: Found open PBIX file: C:\Users\DIKE\Documents\Sample1.pbix
+3/7/2025 11:41:49 AM: Found open PBIX file: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Sample156bb727a-cd41-4d3a-a4c8-269a092a0046.pbix
+3/7/2025 11:41:49 AM: Open PBIX files retrieved successfully.
+3/7/2025 11:41:49 AM: Matched PBIX: C:\Users\DIKE\Documents\Sample1.pbix with Port: 54623
+3/7/2025 11:41:49 AM: Matched PBIX: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Sample156bb727a-cd41-4d3a-a4c8-269a092a0046.pbix with Port: 58840
+3/7/2025 11:41:49 AM: Matched PBIX: C:\Users\DIKE\Documents\sample.pbix with Port: 63007
+3/7/2025 11:41:50 AM: Partition: financials, Query: let
  Source = Excel.Workbook(File.Contents("C:\Program Files\Microsoft Power BI Desktop\bin\SampleData\Financial Sample.xlsx"), null, true),
     financials_Table = Source{[Item="financials",Kind="Table"]}[Data],
     #"Changed Type" = Table.TransformColumnTypes(financials_Table,{{"Segment", type text}, {"Country", type text}, {"Product", type text}, {"Discount Band", type text}, {"Units Sold", type number}, {"Manufacturing Price", Int64.Type}, {"Sale Price", Int64.Type}, {"Gross Sales", type number}, {"Discounts", type number}, {" Sales", type number}, {"COGS", type number}, {"Profit", type number}, {"Date", type date}, {"Month Number", Int64.Type}, {"Month Name", type text}, {"Year", Int64.Type}})
 in
  #"Changed Type"
-DateTableTemplate_bc9e8e30-f55d-4607-895e-6f70cd1ce2a9 : Calendar(Date(2015,1,1), Date(2015,1,1))
-LocalDateTable_07d59351-6ea5-42cc-8945-1d9a7443038f : Calendar(Date(Year(MIN('financials'[Date])), 1, 1), Date(Year(MAX('financials'[Date])), 12, 31))
-3/7/2025 9:19:04 AM: {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
-3/7/2025 9:22:05 AM: Checking workspace directory: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces
-3/7/2025 9:22:05 AM: Found Power BI Port: 54623
-3/7/2025 9:22:05 AM: Found Power BI Port: 58840
-3/7/2025 9:22:05 AM: Found Power BI Port: 63007
-3/7/2025 9:22:05 AM: Total Power BI Ports Found: 3
-3/7/2025 9:22:05 AM: Attempting to get currently open Power BI projects.
-3/7/2025 9:22:07 AM: Found open PBIX file: C:\Users\DIKE\Documents\sample.pbix
-3/7/2025 9:22:07 AM: Found open PBIX file: C:\Users\DIKE\Documents\Sample1.pbix
-3/7/2025 9:22:07 AM: Found open PBIX file: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Sample156bb727a-cd41-4d3a-a4c8-269a092a0046.pbix
-3/7/2025 9:22:07 AM: Open PBIX files retrieved successfully.
-3/7/2025 9:22:07 AM: Matched PBIX: C:\Users\DIKE\Documents\Sample1.pbix with Port: 54623
-3/7/2025 9:22:07 AM: Matched PBIX: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Sample156bb727a-cd41-4d3a-a4c8-269a092a0046.pbix with Port: 58840
-3/7/2025 9:22:07 AM: Matched PBIX: C:\Users\DIKE\Documents\sample.pbix with Port: 63007
-3/7/2025 9:22:09 AM: Partition: financials, Query: let
- Source = Excel.Workbook(File.Contents("C:\Program Files\Microsoft Power BI Desktop\bin\SampleData\Financial Sample.xlsx"), null, true),
-    financials_Table = Source{[Item="financials",Kind="Table"]}[Data],
-    #"Changed Type" = Table.TransformColumnTypes(financials_Table,{{"Segment", type text}, {"Country", type text}, {"Product", type text}, {"Discount Band", type text}, {"Units Sold", type number}, {"Manufacturing Price", Int64.Type}, {"Sale Price", Int64.Type}, {"Gross Sales", type number}, {"Discounts", type number}, {" Sales", type number}, {"COGS", type number}, {"Profit", type number}, {"Date", type date}, {"Month Number", Int64.Type}, {"Month Name", type text}, {"Year", Int64.Type}})
-in
- #"Changed Type"
-3/7/2025 9:22:09 AM: Partition: DateTableTemplate_c1a436d9-d809-49d1-b6ce-56606d58c3ef, Query: Calendar(Date(2015,1,1), Date(2015,1,1))
-3/7/2025 9:22:09 AM: Partition: LocalDateTable_98abd565-7127-4f54-8cda-fdb7af019a27, Query: Calendar(Date(Year(MIN('financials'[Date])), 1, 1), Date(Year(MAX('financials'[Date])), 12, 31))
-3/7/2025 9:22:09 AM: Partition: Sheet1, Query: let
+3/7/2025 11:41:50 AM: Partition: DateTableTemplate_c1a436d9-d809-49d1-b6ce-56606d58c3ef, Query: Calendar(Date(2015,1,1), Date(2015,1,1))
+3/7/2025 11:41:50 AM: Partition: LocalDateTable_98abd565-7127-4f54-8cda-fdb7af019a27, Query: Calendar(Date(Year(MIN('financials'[Date])), 1, 1), Date(Year(MAX('financials'[Date])), 12, 31))
+3/7/2025 11:41:50 AM: Partition: Sheet1, Query: let
  Source = Excel.Workbook(File.Contents("C:\Program Files\Microsoft Power BI Desktop\bin\SampleData\Financial Sample.xlsx"), null, true),
     Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
     #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
     #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Segment", type text}, {"Country", type text}, {"Product", type text}, {"Discount Band", type text}, {"Units Sold", type number}, {"Manufacturing Price", Int64.Type}, {"Sale Price", Int64.Type}, {"Gross Sales", type number}, {"Discounts", type number}, {" Sales", type number}, {"COGS", type number}, {"Profit", type number}, {"Date", type date}, {"Month Number", Int64.Type}, {"Month Name", type text}, {"Year", Int64.Type}})
 in
  #"Changed Type"
-3/7/2025 9:22:09 AM: Partition: LocalDateTable_541e31cf-05b6-4583-a0b7-039c56f5ff37, Query: Calendar(Date(Year(MIN('Sheet1'[Date])), 1, 1), Date(Year(MAX('Sheet1'[Date])), 12, 31))
-3/7/2025 9:22:20 AM: Asked OpenAI: 
-Optimize this Power BI M Query:
-financials : let
- Source = Excel.Workbook(File.Contents("C:\Program Files\Microsoft Power BI Desktop\bin\SampleData\Financial Sample.xlsx"), null, true),
-    financials_Table = Source{[Item="financials",Kind="Table"]}[Data],
-    #"Changed Type" = Table.TransformColumnTypes(financials_Table,{{"Segment", type text}, {"Country", type text}, {"Product", type text}, {"Discount Band", type text}, {"Units Sold", type number}, {"Manufacturing Price", Int64.Type}, {"Sale Price", Int64.Type}, {"Gross Sales", type number}, {"Discounts", type number}, {" Sales", type number}, {"COGS", type number}, {"Profit", type number}, {"Date", type date}, {"Month Number", Int64.Type}, {"Month Name", type text}, {"Year", Int64.Type}})
-in
- #"Changed Type"
-DateTableTemplate_c1a436d9-d809-49d1-b6ce-56606d58c3ef : Calendar(Date(2015,1,1), Date(2015,1,1))
-LocalDateTable_98abd565-7127-4f54-8cda-fdb7af019a27 : Calendar(Date(Year(MIN('financials'[Date])), 1, 1), Date(Year(MAX('financials'[Date])), 12, 31))
-Sheet1 : let
- Source = Excel.Workbook(File.Contents("C:\Program Files\Microsoft Power BI Desktop\bin\SampleData\Financial Sample.xlsx"), null, true),
-    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
-    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
-    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Segment", type text}, {"Country", type text}, {"Product", type text}, {"Discount Band", type text}, {"Units Sold", type number}, {"Manufacturing Price", Int64.Type}, {"Sale Price", Int64.Type}, {"Gross Sales", type number}, {"Discounts", type number}, {" Sales", type number}, {"COGS", type number}, {"Profit", type number}, {"Date", type date}, {"Month Number", Int64.Type}, {"Month Name", type text}, {"Year", Int64.Type}})
-in
- #"Changed Type"
-LocalDateTable_541e31cf-05b6-4583-a0b7-039c56f5ff37 : Calendar(Date(Year(MIN('Sheet1'[Date])), 1, 1), Date(Year(MAX('Sheet1'[Date])), 12, 31))
-3/7/2025 9:22:28 AM: {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
+3/7/2025 11:41:50 AM: Partition: LocalDateTable_541e31cf-05b6-4583-a0b7-039c56f5ff37, Query: Calendar(Date(Year(MIN('Sheet1'[Date])), 1, 1), Date(Year(MAX('Sheet1'[Date])), 12, 31))
+3/7/2025 11:41:55 AM: OPENAI_API_KEY: 
+3/7/2025 11:41:55 AM: requestData : "n { model = gpt-4, messages = <>f__AnonymousType1`2[System.String,System.String][], max_tokens = 100 }
+3/7/2025 11:41:55 AM: json : "n {"model":"gpt-4","messages":[{"role":"system","content":"You are an assistant that helps optimize Power BI queries."},{"role":"user","content":"Optimize this Power BI M Query: financials : let\n Source = Excel.Workbook(File.Contents(\u0022C:\\Program Files\\Microsoft Power BI Desktop\\bin\\SampleData\\Financial Sample.xlsx\u0022), null, true),\n    financials_Table = Source{[Item=\u0022financials\u0022,Kind=\u0022Table\u0022]}[Data],\n    #\u0022Changed Type\u0022 = Table.TransformColumnTypes(financials_Table,{{\u0022Segment\u0022, type text}, {\u0022Country\u0022, type text}, {\u0022Product\u0022, type text}, {\u0022Discount Band\u0022, type text}, {\u0022Units Sold\u0022, type number}, {\u0022Manufacturing Price\u0022, Int64.Type}, {\u0022Sale Price\u0022, Int64.Type}, {\u0022Gross Sales\u0022, type number}, {\u0022Discounts\u0022, type number}, {\u0022 Sales\u0022, type number}, {\u0022COGS\u0022, type number}, {\u0022Profit\u0022, type number}, {\u0022Date\u0022, type date}, {\u0022Month Number\u0022, Int64.Type}, {\u0022Month Name\u0022, type text}, {\u0022Year\u0022, Int64.Type}})\nin\n #\u0022Changed Type\u0022"}],"max_tokens":100}
+3/7/2025 11:42:05 AM: encodedData : {"error":{"code":"unsupported_country_region_territory","message":"Country, region, or territory not supported","param":null,"type":"request_forbidden"}}
