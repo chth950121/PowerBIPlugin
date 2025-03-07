@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Security.Principal;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;  // FIX: Added missing namespace for Brushes
 
 namespace PowerBIPlugin.UI
 {
@@ -21,7 +22,6 @@ namespace PowerBIPlugin.UI
 
             EnsureRunAsAdmin();
         }
-
 
         // Ensures the application runs as an Administrator
         private void EnsureRunAsAdmin()
@@ -57,6 +57,16 @@ namespace PowerBIPlugin.UI
             }
         }
 
+        private void btnGenerateOptimizedQuery_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Generate Optimized Query button clicked!");
+        }
+
+        private void btnGenerateOptimizedMeasure_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Generate Optimized Measure button clicked!");
+        }
+
         private void lbOpenProjects_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (lbOpenProjects.SelectedItem is null) return;
@@ -64,8 +74,11 @@ namespace PowerBIPlugin.UI
             lbQueries.Items.Clear();
             lbMeasures.Items.Clear();
 
-            string selectedProject = lbOpenProjects.SelectedItem.ToString();
-            string port = selectedProject.Split(new string[] { " : " }, StringSplitOptions.None)[0].Trim();
+            string selectedProject = lbOpenProjects.SelectedItem?.ToString() ?? string.Empty;
+            string[] parts = selectedProject.Split(new string[] { " : " }, StringSplitOptions.None);
+            if (parts.Length < 2) return;
+
+            string port = parts[0].Trim();
 
             try
             {

@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[19.90.0, )"
             },
+            "OpenAI.Net": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
             "System.Management": {
               "target": "Package",
               "version": "[9.0.2, )"

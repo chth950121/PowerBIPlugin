@@ -211,3 +211,11 @@ E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\obj\Debug\net48\PowerBIPlugin.UI.so
 E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\obj\Debug\net48\PowerBIP.E4C7D749.Up2Date
 E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\obj\Debug\net48\PowerBIPlugin.UI.exe
 E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\obj\Debug\net48\PowerBIPlugin.UI.pdb
+E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\bin\Debug\net48\System.Net.Http.Formatting.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\bin\Debug\net48\System.Web.Http.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\bin\Debug\net48\Microsoft.Bcl.AsyncInterfaces.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\bin\Debug\net48\Newtonsoft.Json.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\bin\Debug\net48\OpenAI.Net.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\bin\Debug\net48\System.Interactive.Async.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\bin\Debug\net48\System.Linq.Async.dll
+E:\github\PowerBIPlugin\src\PowerBIPlugin.UI\bin\Debug\net48\System.Threading.Tasks.Extensions.dll
