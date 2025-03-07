@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Diagnostics;
 using System.Text.RegularExpressions;
 using Microsoft.AnalysisServices.AdomdClient;
 
@@ -145,7 +140,9 @@ namespace PowerBIPlugin
             var openProjects = new List<string>();
             try
             {
-                string output = _processService.ExecuteCommand(handlePath, "/c \"handle.exe -accepteula | findstr /i \".pbix\"\"");
+                string output = _processService.ExecuteCommand(handlePath);
+                Logger.Log($"Raw Handle Output: {output}");
+
                 if (string.IsNullOrWhiteSpace(output))
                 {
                     Logger.Log("No open PBIX files found.");
@@ -156,6 +153,7 @@ namespace PowerBIPlugin
                 foreach (var line in lines)
                 {
                     Match match = Regex.Match(line, @"[a-zA-Z]:\\.*?\.pbix", RegexOptions.IgnoreCase);
+                    
                     if (match.Success)
                     {
                         string filePath = match.Value;
@@ -178,25 +176,36 @@ namespace PowerBIPlugin
         {
             var matchedProjects = new List<OpenProject>();
 
-            var pbixFileTimestamps = openPBIXFiles.ToDictionary(file => file, file => _fileSystemService.GetLastWriteTime(file));
-
-            var sortedPBIX = pbixFileTimestamps.OrderByDescending(kvp => kvp.Value).ToList();
-            var sortedPorts = ports.ToList();
-
-            for (int i = 0; i < Math.Max(sortedPBIX.Count, sortedPorts.Count); i++)
+            try
             {
-                matchedProjects.Add(new OpenProject(
-                    i < sortedPBIX.Count ? Path.GetFileNameWithoutExtension(sortedPBIX[i].Key) : "Undefined",
-                    i < sortedPBIX.Count ? sortedPBIX[i].Key : "Undefined",
-                    i < sortedPorts.Count && int.TryParse(sortedPorts[i], out int port) ? (int?)port : null,
-                    i < sortedPorts.Count ? $"Workspace_{sortedPorts[i]}" : "Undefined",
-                    i < sortedPBIX.Count ? sortedPBIX[i].Value : DateTime.Now
-                ));
+                var pbixFileTimestamps = openPBIXFiles.ToDictionary(
+                    file => file, 
+                    file => _fileSystemService.GetLastWriteTime(file)
+                );
 
-                Logger.Log($"Matched PBIX: {sortedPBIX[i].Key ?? "Undefined"} with Port: {sortedPorts[i] ?? "Undefined"}");
+                var sortedPBIX = pbixFileTimestamps.OrderByDescending(kvp => kvp.Value).ToList();
+                var sortedPorts = ports.ToList();
+
+                for (int i = 0; i < Math.Max(sortedPBIX.Count, sortedPorts.Count); i++)
+                {
+                    matchedProjects.Add(new OpenProject(
+                        i < sortedPBIX.Count ? Path.GetFileNameWithoutExtension(sortedPBIX[i].Key) : "Undefined",
+                        i < sortedPBIX.Count ? sortedPBIX[i].Key : "Undefined",
+                        i < sortedPorts.Count && int.TryParse(sortedPorts[i], out int port) ? (int?)port : null,
+                        i < sortedPorts.Count ? $"Workspace_{sortedPorts[i]}" : "Undefined",
+                        i < sortedPBIX.Count ? sortedPBIX[i].Value : DateTime.Now
+                    ));
+
+                    Logger.Log($"Matched PBIX: {sortedPBIX.ElementAtOrDefault(i).Key ?? "Undefined"} with Port: {sortedPorts.ElementAtOrDefault(i) ?? "Undefined"}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.Log($"Error in GetMatchedPP: {ex.Message}");
             }
 
             return matchedProjects;
         }
+
     }
 }
