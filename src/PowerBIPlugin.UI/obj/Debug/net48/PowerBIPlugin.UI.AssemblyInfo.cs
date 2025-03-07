@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PowerBIPlugin.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e98605fa5aaefb60232414c8af2e2316b955b0d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+396754f95301fab87517af0e0c02d3d5727fada8")]
 [assembly: System.Reflection.AssemblyProductAttribute("PowerBIPlugin.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PowerBIPlugin.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

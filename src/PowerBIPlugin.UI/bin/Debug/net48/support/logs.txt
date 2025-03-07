@@ -1,0 +1,26 @@
+3/7/2025 1:46:17 PM: Checking workspace directory: C:\Users\DIKE\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces
+3/7/2025 1:46:17 PM: Found Power BI Port: 58238
+3/7/2025 1:46:17 PM: Total Power BI Ports Found: 1
+3/7/2025 1:46:17 PM: Attempting to get currently open Power BI projects.
+3/7/2025 1:46:19 PM: Found open PBIX file: C:\Users\DIKE\Downloads\Trial Report.pbix
+3/7/2025 1:46:19 PM: Open PBIX files retrieved successfully.
+3/7/2025 1:46:19 PM: Matched PBIX: C:\Users\DIKE\Downloads\Trial Report.pbix with Port: 58238
+3/7/2025 1:46:20 PM: Partition: Data, Query: let
+    Source = Excel.Workbook(File.Contents("C:\Users\fernando.floresburg\Documents\Prueba\Data.xlsx"), null, true),
+    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Manager", type text}, {"Institution", type text}, {"Country", type text}, {"Budget", Int64.Type}, {"Completion Date", type text}})
+in
+    #"Changed Type"
+3/7/2025 1:46:20 PM: Partition: Measures2, Query: let
+    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+in
+    #"Removed Columns"
+3/7/2025 1:46:20 PM: Measure: Country Count, DAX: DISTINCTCOUNT(Data[Country])
+3/7/2025 1:46:20 PM: Measure: Average Budget by Country, DAX: calculate(average('Data'[Budget]),'Data'[Country]=SELECTEDVALUE('Data'[Country]))
+3/7/2025 1:46:20 PM: Measure: Days to completion, DAX: averagex(
+'Data',
+DATEDIFF(today(),'Data'[Completion Date],DAY)
+)

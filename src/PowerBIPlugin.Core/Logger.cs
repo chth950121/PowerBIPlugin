@@ -5,14 +5,21 @@ namespace PowerBIPlugin
 {
     public static class Logger
     {
-        private static readonly string logFilePath = @"E:\github\PowerBIPlugin\logs.txt"; // Change the path as needed
+        // Change GetLogPath to static so it can be used in a static class
+        private static string GetLogPath()
+        {
+            string basePath = AppDomain.CurrentDomain.BaseDirectory; // Get app's base directory
+            string relativePath = Path.Combine(basePath, "support", "logs.txt");
+
+            return relativePath;
+        }
 
         public static void Log(string message)
         {
             try
             {
                 // Append the log message to the log file
-                using (StreamWriter writer = new StreamWriter(logFilePath, true))
+                using (StreamWriter writer = new StreamWriter(GetLogPath(), true))
                 {
                     writer.WriteLine($"{DateTime.Now}: {message}");
                 }
@@ -29,7 +36,7 @@ namespace PowerBIPlugin
             try
             {
                 // Read all log messages from the log file
-                return File.ReadAllText(logFilePath);
+                return File.ReadAllText(GetLogPath());
             }
             catch (Exception ex)
             {
